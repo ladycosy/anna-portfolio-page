@@ -5,14 +5,25 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
+  background: lightgray;
 }
 
-h1,
+h1 {
+  display: inline-block;
+  font-size: 48px;
+  background-color: coral;
+  padding-left: 30px;
+}
+
 h2,
 h3,
-h4,
+h4 {
+  font-size: 30px;
+}
+
 h5,
 h6 {
   margin: 0;
@@ -20,4 +31,66 @@ h6 {
 
 p {
   margin: 0;
+  color: white;
+}
+
+.header {
+  padding: 20px;
+  background-color: #2a607c;
+  color: #ffffff;
+}
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-size: 20px;
+}
+.header nav ul {
+  list-style-type: none;
+}
+.header nav ul li {
+  display: inline-block;
+}
+a {
+  color: #ffffff;
+  padding: 20px;
+  text-decoration: underline;
+}
+.hero-banner {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 0;
+  background-image: url("../images/02-hero-bg.jpg");
+  opacity: 0.9;
+  background-color: #e1dada;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+.subtitle-box {
+  float: inline-end;
+  background-color: coral;
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.work-section-box {
+  width: 60%;
+  height: 300px;
+  border: 1px solid brown;
+  /* display: inline-block; */
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+.project-name-box {
+  background-color: coral;
+  display: inline-block;
+}
+
+.page-section-contact ul {
+  list-style-type: none;
+}
+.page-section-contact li {
+  display: inline-block;
 }
