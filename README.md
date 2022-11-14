@@ -20,4 +20,4 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 ## Mock-Up
 
-![](https://github.com/ladycosy/anna-portfolio-page/blob/main/images/01-css-challenge-demo.gif](https://github.com/ladycosy/anna-portfolio_page/blob/main/images/01-css-challenge-demo.gif)
+![](https://github.com/ladycosy/anna-portfolio_page/blob/main/images/01-css-challenge-demo.gif)
