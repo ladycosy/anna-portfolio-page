@@ -2,20 +2,33 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Variables */
+:root {
+  --bg-color: #eef1f2;
+  --primary-color: #0c8be5;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+}
+/* Variables end */
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
-  background: lightgray;
+  background: var(--bg-color);
 }
 
 h1 {
   display: inline-block;
   font-size: 48px;
-  background-color: coral;
-  padding-left: 30px;
+  color: white;
+  background-color: var(--primary-color);
 }
 
 h2,
@@ -35,27 +48,31 @@ p {
 }
 
 .header {
-  padding: 20px;
   background-color: #2a607c;
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .header nav {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
   font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
 .header nav ul {
   list-style-type: none;
+  gap: 1.5rem;
 }
 .header nav ul li {
   display: inline-block;
+  justify-content: flex-end;
 }
-a {
-  color: #ffffff;
+.navigation-bar a {
+  color: var(--primary-color);
   padding: 20px;
   text-decoration: underline;
 }
+
 .hero-banner {
   height: 400px;
   width: 100%;
@@ -65,15 +82,53 @@ a {
   background-color: #e1dada;
   background-size: cover;
   background-position: center;
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .subtitle-box {
   float: inline-end;
-  background-color: coral;
+  background-color: var(--primary-color);
   color: #ffffff;
   padding: 10px;
   margin-bottom: 10px;
-  float: right;
+}
+
+.page-wrapper section {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  /* display: flex; */
+
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+}
+
+.page-section-aboutme {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page.section h3 {
+}
+
+.page-section p {
+}
+
+.project-name-box h4 {
+}
+
+.project-name-box h5 {
+}
+
+.page-section-work {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .work-section-box {
@@ -84,13 +139,22 @@ a {
   background-image: url("../images/02-portfolio-1.jpg");
 }
 .project-name-box {
-  background-color: coral;
+  background-color: var(--primary-color);
   display: inline-block;
+}
+
+.page-section-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .page-section-contact ul {
   list-style-type: none;
+  /* display: flex; */
 }
+
 .page-section-contact li {
   display: inline-block;
 }
