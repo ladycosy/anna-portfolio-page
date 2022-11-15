@@ -8,10 +8,12 @@ html {
 
 /* Variables */
 :root {
-  --bg-color: #eef1f2;
-  --primary-color: #0c8be5;
-  --secondary-color: #ff7235;
+  --bg-color: #e8eef0;
+  --header-color: #363839;
+  --primary-color: #0f5a8f;
+  --secondary-color: #30f8ea;
   --primary-shadow: #8b8eaf;
+  --text-color: #808287;
 }
 /* Variables end */
 
@@ -22,13 +24,22 @@ body {
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
   background: var(--bg-color);
+  color: var(--text-color);
+}
+
+body a {
+  text-decoration: none;
+}
+
+body ul {
+  list-style-type: none;
 }
 
 h1 {
-  display: inline-block;
   font-size: 48px;
-  color: white;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding-left: 50px;
+  padding-right: 10px;
 }
 
 h2,
@@ -44,14 +55,14 @@ h6 {
 
 p {
   margin: 0;
-  color: white;
 }
 
 .header {
-  background-color: #2a607c;
+  background-color: var(--header-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 5px 10px rgba(24, 18, 18, 0.8);
 }
 
 .header nav {
@@ -59,27 +70,31 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
-.header nav ul {
-  list-style-type: none;
-  gap: 1.5rem;
+
+.header ul {
+  padding-right: 40px;
+  display: flex;
+  gap: 2rem;
 }
-.header nav ul li {
+.header li {
   display: inline-block;
   justify-content: flex-end;
 }
-.navigation-bar a {
-  color: var(--primary-color);
-  padding: 20px;
-  text-decoration: underline;
+.header a {
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
+/* <!-- hero banner --> */
+
 .hero-banner {
-  height: 400px;
+  height: 250px;
   width: 100%;
   margin-bottom: 0;
   background-image: url("../images/02-hero-bg.jpg");
-  opacity: 0.9;
-  background-color: #e1dada;
+  opacity: 0.5;
+  background-color: #1838da;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -88,10 +103,9 @@ p {
 }
 .subtitle-box {
   float: inline-end;
-  background-color: var(--primary-color);
-  color: #ffffff;
-  padding: 10px;
+  background-color: var(--secondary-color);
   margin-bottom: 10px;
+  margin-right: 40px;
 }
 
 .page-wrapper section {
@@ -108,38 +122,52 @@ p {
 .page-section-aboutme {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
-.page.section h3 {
+.page-wrapper h3 {
+  font-size: 45px;
+  margin-left: 10%;
+  text-align: right;
 }
 
 .page-section p {
+  width: 50vmax;
+  text-align: left;
+  margin-left: 1%;
 }
 
 .project-name-box h4 {
+  font-size: 25px;
 }
 
 .project-name-box h5 {
+  font-size: 20px;
+}
+
+.vertical-line {
+  border-left: 4px solid var(--text-color);
 }
 
 .page-section-work {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .work-section-box {
-  width: 60%;
-  height: 300px;
-  border: 1px solid brown;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50vmax;
+  /* border: 1px solid var(--secondary-color); */
   /* display: inline-block; */
-  background-image: url("../images/02-portfolio-1.jpg");
+  /* background-image: url("../images/02-portfolio-1.jpg"); */
 }
 .project-name-box {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   display: inline-block;
 }
 
@@ -147,14 +175,22 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .page-section-contact ul {
-  list-style-type: none;
-  /* display: flex; */
+  width: 50vmax;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 1%;
 }
 
 .page-section-contact li {
   display: inline-block;
+}
+
+.page-section-contact a {
+  color: var(--text-color);
+  border-bottom: 2px solid var(--text-color);
 }
