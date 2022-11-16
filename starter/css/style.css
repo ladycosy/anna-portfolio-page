@@ -12,7 +12,6 @@ html {
   --header-color: #363839;
   --primary-color: #0f5a8f;
   --secondary-color: rgb(48, 248, 234);
-  --primary-shadow: #8b8eaf;
   --text-color: #808287;
 }
 /* Variables end */
@@ -37,9 +36,6 @@ body ul {
 
 h1 {
   font-size: 48px;
-  background-color: var(--secondary-color);
-  padding-left: 9rem;
-  padding-right: 1rem;
 }
 
 h2,
@@ -65,17 +61,31 @@ p {
   justify-content: space-between;
   box-shadow: 0 5px 10px rgba(24, 18, 18, 0.8);
 }
+.pagename {
+  width: 25%;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--secondary-color);
+  margin: 1rem 0rem;
+  padding-right: 1rem;
+}
 
 .header nav {
+  width: 50%;
   font-size: 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .header ul {
   padding-right: 3rem;
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1.5rem;
 }
 .header li {
   display: inline-block;
@@ -83,7 +93,7 @@ p {
 }
 .header a {
   color: var(--secondary-color);
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   border-bottom: 2px solid var(--secondary-color);
 }
 
@@ -98,17 +108,17 @@ p {
   background-blend-mode: darken;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  position: relative;
 }
 .subtitle-box {
   font-size: 40px;
   background-color: var(--secondary-color);
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
   margin-bottom: 1rem;
   margin-right: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .page-wrapper section {
@@ -119,9 +129,10 @@ p {
 }
 
 .page-wrapper h3 {
+  width: 15%;
+  height: 8rem;
   font-size: 40px;
   margin-left: 10%;
-  width: 150px;
   text-align: right;
 }
 
@@ -133,12 +144,12 @@ p {
 }
 
 .page-section p {
-  height: 8rem;
   width: 70%;
+  margin-left: 1%;
+  height: 8rem;
   text-align: left;
   padding-left: 2rem;
   padding-right: 3rem;
-  margin-left: 1%;
   border-left: 4px solid var(--text-color);
 }
 
@@ -146,115 +157,175 @@ p {
 .page-section-work {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .work-section-flexbox {
   width: 70%;
   margin-left: 1%;
-  padding-left: 2rem;
+  padding-left: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   border-left: 4px solid var(--text-color);
 }
 
-.project-flexbox {
-  border: 3px solid var(--secondary-color);
-}
-
+/* <!-- project 1 --> */
 .project1 {
   width: 100%;
   aspect-ratio: 16/9;
   position: relative;
+  border: 0.3rem solid var(--secondary-color);
+  margin: 0.5rem;
 }
 
 .project1 img {
   width: 100%;
   height: 100%;
+  opacity: 0.6;
+  transition: 0.1s;
+}
+
+.project1 img:hover {
+  opacity: 1;
 }
 
 .project1 div {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: 0rem;
+  display: flex;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
 }
-
+/* <!-- project 2 --> */
 .project2 {
-  width: 100%;
-  height: 15rem;
+  width: 48%;
+  /* height: 16rem; */
   aspect-ratio: 16/9;
+  border: 0.3rem solid var(--secondary-color);
+  margin: 0.5rem;
   position: relative;
 }
 .project2 img {
   width: 100%;
   height: 100%;
+  opacity: 0.6;
+  transition: 0.1s;
+}
+
+.project2 img:hover {
+  opacity: 1;
 }
 
 .project2 div {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: 0rem;
+  display: flex;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
 }
-
+/* <!-- project 3 --> */
 .project3 {
-  width: 100%;
-  height: 15rem;
+  width: 48%;
+  /* height: 16rem; */
   aspect-ratio: 16/9;
+  border: 0.3rem solid var(--secondary-color);
+  margin: 0.5rem;
   position: relative;
 }
 .project3 img {
   width: 100%;
   height: 100%;
+  opacity: 0.6;
+  transition: 0.1s;
+}
+
+.project3 img:hover {
+  opacity: 1;
 }
 
 .project3 div {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: 0rem;
+  display: flex;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
 }
-
+/* <!-- project 4 --> */
 .project4 {
-  width: 100%;
-  height: 15rem;
+  width: 48%;
+  /* height: 16rem; */
   aspect-ratio: 16/9;
+  border: 0.3rem solid var(--secondary-color);
+  margin: 0.5rem;
   position: relative;
 }
 
 .project4 img {
   width: 100%;
   height: 100%;
+  opacity: 0.6;
+  transition: 0.1s;
+}
+
+.project4 img:hover {
+  opacity: 1;
 }
 
 .project4 div {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: 0rem;
+  display: flex;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
 }
-
+/* <!-- project 5 --> */
 .project5 {
-  width: 100%;
-  height: 15rem;
+  width: 48%;
+  /* height: 16rem; */
   aspect-ratio: 16/9;
+  border: 0.3rem solid var(--secondary-color);
+  margin: 0.5rem;
   position: relative;
 }
 
 .project5 img {
   width: 100%;
   height: 100%;
+  opacity: 0.6;
+  transition: 0.1s;
+}
+
+.project5 img:hover {
+  opacity: 1;
 }
 
 .project5 div {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: 0rem;
+  display: flex;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
 }
 
 .project-namebox {
   background-color: var(--secondary-color);
   padding: 0px 10px;
-  position: absolute;
-  bottom: 1rem;
-  left: 0rem;
 }
 
 .project-name-box h4 {
