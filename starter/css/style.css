@@ -353,3 +353,21 @@ p {
   border-bottom: 2px solid var(--text-color);
 }
 
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 780px and min-width: 481px) {
+  h1 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+}
