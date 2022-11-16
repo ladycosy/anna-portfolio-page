@@ -73,7 +73,7 @@ p {
 }
 
 .header nav {
-  width: 50%;
+  width: 60%;
   font-size: 20px;
   display: flex;
   justify-content: flex-end;
@@ -131,7 +131,7 @@ p {
 .page-wrapper h3 {
   width: 15%;
   height: 8rem;
-  font-size: 40px;
+  font-size: 30px;
   margin-left: 10%;
   text-align: right;
 }
@@ -192,12 +192,12 @@ p {
 
 .project1 div {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 10%;
   left: 0rem;
-  display: flex;
+  /* display: flex;
   display: inline-block;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   color: var(--text-color);
 }
 /* <!-- project 2 --> */
@@ -222,12 +222,12 @@ p {
 
 .project2 div {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 5%;
   left: 0rem;
-  display: flex;
+  /* display: flex;
   display: inline-block;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   color: var(--text-color);
 }
 /* <!-- project 3 --> */
@@ -252,12 +252,12 @@ p {
 
 .project3 div {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 5%;
   left: 0rem;
-  display: flex;
+  /* display: flex;
   display: inline-block;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   color: var(--text-color);
 }
 /* <!-- project 4 --> */
@@ -283,12 +283,12 @@ p {
 
 .project4 div {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 5%;
   left: 0rem;
-  display: flex;
+  /* display: flex;
   display: inline-block;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   color: var(--text-color);
 }
 /* <!-- project 5 --> */
@@ -314,24 +314,18 @@ p {
 
 .project5 div {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 5%;
   left: 0rem;
-  display: flex;
+  /* display: flex;
   display: inline-block;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   color: var(--text-color);
 }
 
 .project-namebox {
   background-color: var(--secondary-color);
-  padding: 0px 10px;
-}
-
-.project-name-box h4 {
-}
-
-.project-name-box h5 {
+  padding: 0px 2%;
 }
 
 /* <!-- contact --> */
@@ -358,3 +352,4 @@ p {
   color: var(--text-color);
   border-bottom: 2px solid var(--text-color);
 }
+
