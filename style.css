@@ -103,7 +103,7 @@ p {
   height: 20rem;
   width: 100%;
   margin-bottom: 0;
-  background-image: url("../images/02-hero-bg.jpg");
+  background-image: url("starter/images/02-hero-bg.jpg");
   background-color: rgba(5, 72, 160, 0.5);
   background-blend-mode: darken;
   background-size: cover;
