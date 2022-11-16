@@ -2,95 +2,288 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Variables */
+:root {
+  --bg-color: #e8eef0;
+  --header-color: #363839;
+  --primary-color: #0f5a8f;
+  --secondary-color: rgb(48, 248, 234);
+  --primary-shadow: #8b8eaf;
+  --text-color: #808287;
+}
+/* Variables end */
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
-  background: lightgray;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+body a {
+  text-decoration: none;
+}
+
+body ul {
+  list-style-type: none;
 }
 
 h1 {
-  display: inline-block;
   font-size: 48px;
-  background-color: coral;
-  padding-left: 30px;
+  background-color: var(--secondary-color);
+  padding-left: 9rem;
+  padding-right: 1rem;
 }
 
 h2,
 h3,
 h4 {
-  font-size: 30px;
+  font-size: 15px;
 }
-
-h5,
+h5 {
+  font-size: 10px;
+}
 h6 {
   margin: 0;
 }
 
 p {
   margin: 0;
-  color: white;
 }
 
 .header {
-  padding: 20px;
-  background-color: #2a607c;
-  color: #ffffff;
+  background-color: var(--header-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 10px rgba(24, 18, 18, 0.8);
 }
+
 .header nav {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
   font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
-.header nav ul {
-  list-style-type: none;
+
+.header ul {
+  padding-right: 3rem;
+  display: flex;
+  gap: 2rem;
 }
-.header nav ul li {
+.header li {
   display: inline-block;
+  justify-content: flex-end;
 }
-a {
-  color: #ffffff;
-  padding: 20px;
-  text-decoration: underline;
+.header a {
+  color: var(--secondary-color);
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--secondary-color);
 }
+
+/* <!-- hero banner --> */
+
 .hero-banner {
-  height: 400px;
+  height: 20rem;
   width: 100%;
   margin-bottom: 0;
   background-image: url("../images/02-hero-bg.jpg");
-  opacity: 0.9;
-  background-color: #e1dada;
+  background-color: rgba(5, 72, 160, 0.5);
+  background-blend-mode: darken;
   background-size: cover;
   background-position: center;
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .subtitle-box {
-  float: inline-end;
-  background-color: coral;
-  color: #ffffff;
-  padding: 10px;
-  margin-bottom: 10px;
-  float: right;
+  font-size: 40px;
+  background-color: var(--secondary-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 2.5rem;
 }
 
-.work-section-box {
-  width: 60%;
-  height: 300px;
-  border: 1px solid brown;
-  /* display: inline-block; */
-  background-image: url("../images/02-portfolio-1.jpg");
+.page-wrapper section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.project-name-box {
-  background-color: coral;
-  display: inline-block;
+
+.page-wrapper h3 {
+  font-size: 40px;
+  margin-left: 10%;
+  width: 150px;
+  text-align: right;
+}
+
+/* <!-- about me --> */
+.page-section-aboutme {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.page-section p {
+  height: 8rem;
+  width: 70%;
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  margin-left: 1%;
+  border-left: 4px solid var(--text-color);
+}
+
+/* <!-- portfolio container --> */
+.page-section-work {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-section-flexbox {
+  width: 70%;
+  margin-left: 1%;
+  padding-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-left: 4px solid var(--text-color);
+}
+
+.project-flexbox {
+  border: 3px solid var(--secondary-color);
+}
+
+.project1 {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+.project1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.project1 div {
+  position: absolute;
+  bottom: 1rem;
+  left: 0rem;
+}
+
+.project2 {
+  width: 100%;
+  height: 15rem;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+.project2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.project2 div {
+  position: absolute;
+  bottom: 1rem;
+  left: 0rem;
+}
+
+.project3 {
+  width: 100%;
+  height: 15rem;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+.project3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.project3 div {
+  position: absolute;
+  bottom: 1rem;
+  left: 0rem;
+}
+
+.project4 {
+  width: 100%;
+  height: 15rem;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+.project4 img {
+  width: 100%;
+  height: 100%;
+}
+
+.project4 div {
+  position: absolute;
+  bottom: 1rem;
+  left: 0rem;
+}
+
+.project5 {
+  width: 100%;
+  height: 15rem;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+.project5 img {
+  width: 100%;
+  height: 100%;
+}
+
+.project5 div {
+  position: absolute;
+  bottom: 1rem;
+  left: 0rem;
+}
+
+.project-namebox {
+  background-color: var(--secondary-color);
+  padding: 0px 10px;
+  position: absolute;
+  bottom: 1rem;
+  left: 0rem;
+}
+
+.project-name-box h4 {
+}
+
+.project-name-box h5 {
+}
+
+/* <!-- contact --> */
+.page-section-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .page-section-contact ul {
-  list-style-type: none;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 1%;
+  border-left: 4px solid var(--text-color);
 }
+
 .page-section-contact li {
   display: inline-block;
+}
+
+.page-section-contact a {
+  color: var(--text-color);
+  border-bottom: 2px solid var(--text-color);
 }
