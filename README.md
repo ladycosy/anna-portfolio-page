@@ -24,4 +24,5 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 ## Deployed app
 
-! [] (https://ladycosy.github.io/anna-portfolio_page/)
+[Link]([url](https://ladycosy.github.io/anna-portfolio_page/))
+
