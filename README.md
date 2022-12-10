@@ -22,7 +22,16 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 ![](https://github.com/ladycosy/anna-portfolio_page/blob/main/images/01-css-challenge-demo.gif)
 
-## Deployed app
+## Link to Deployed Application
 
 [Link](https://ladycosy.github.io/anna-portfolio_page/)
 
+## Link to Project GitHub Repo
+
+[Link]()
+
+## Screenshot
+
+![]()
+
+---
