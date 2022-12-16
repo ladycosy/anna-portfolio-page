@@ -1,6 +1,6 @@
 # anna-portfolio-page
 
-This is portfolio with deployed web applications
+This is a portfolio page created in `HTML and CSS`. The code had been written from the scratch in `VS Code` program.
 
 
 ## User Story
