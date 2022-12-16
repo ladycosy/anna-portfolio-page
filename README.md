@@ -34,6 +34,6 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 [GitHub Repo](https://github.com/ladycosy/anna-portfolio_page.git)
 
 ## Screenshot
-<img src="https://github.com/ladycosy/anna-portfolio_page/blob/fc7d317ed90cd572c830b26ed04c3ee0de7c3958/images/page_screenshot.png" alt="drawing" width="400"/>
+<img src="https://github.com/ladycosy/anna-portfolio_page/blob/fc7d317ed90cd572c830b26ed04c3ee0de7c3958/images/page_screenshot.png" alt="page screenshot" width="400"/>
 
 ---
