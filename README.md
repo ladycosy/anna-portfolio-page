@@ -27,11 +27,11 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 ## Link to Deployed Application
 
-[Live URL](https://ladycosy.github.io/anna-portfolio_page/)
+[Live URL](https://ladycosy.github.io/anna-portfolio-page/)
 
 ## Link to Project GitHub Repo
 
-[GitHub Repo](https://github.com/ladycosy/anna-portfolio_page.git)
+[GitHub Repo](https://github.com/ladycosy/anna-portfolio-page.git)
 
 ## Screenshot
 <img src="https://github.com/ladycosy/anna-portfolio_page/blob/fc7d317ed90cd572c830b26ed04c3ee0de7c3958/images/page_screenshot.png" alt="page screenshot" width="400"/>
