@@ -4,8 +4,11 @@ This is portfolio with deployed web applications
 
 
 ## User Story
-
-I'm a student who needs a portfolio of work that can showcase my skills and talents to potential employers
+```
+I AM a student 
+WHO needs a portfolio of work 
+SO THAT I can showcase my skills and talents to potential employers
+```
 
 ## Acceptance Criteria
 
@@ -24,11 +27,11 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 ## Link to Deployed Application
 
-[Link](https://ladycosy.github.io/anna-portfolio_page/)
+[Live URL](https://ladycosy.github.io/anna-portfolio_page/)
 
 ## Link to Project GitHub Repo
 
-[Link]()
+[GitHub Repo]()
 
 ## Screenshot
 
