@@ -1,4 +1,4 @@
-# anna-portfolio_page
+# anna-portfolio-page
 
 This is portfolio with deployed web applications
 
@@ -31,7 +31,7 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 ## Link to Project GitHub Repo
 
-[GitHub Repo]()
+[GitHub Repo](https://github.com/ladycosy/anna-portfolio_page.git)
 
 ## Screenshot
 
