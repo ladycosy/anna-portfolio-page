@@ -4,11 +4,13 @@ This is a portfolio page created in `HTML and CSS`. The code had been written fr
 
 
 ## User Story
+
+```text
+AS A traveler
+I WANT to see the weather outlook for multiple cities
+SO THAT I can plan a trip accordingly
 ```
-I AM a student 
-WHO needs a portfolio of work 
-SO THAT I can showcase my skills and talents to potential employers
-```
+
 
 ## Acceptance Criteria
 
