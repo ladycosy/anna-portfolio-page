@@ -39,14 +39,17 @@ h1 {
 }
 
 h4 {
+  margin: 0;
   font-size: 25px;
 }
 
 h5 {
+  margin: 0;
   font-size: 15px;
 }
 h6 {
   margin: 0;
+  font-size: 12px;
 }
 
 p {
@@ -99,9 +102,7 @@ p {
 
 /* hero banner*/
 .hero-banner {
-  height: 10rem;
-  width: 100%;
-  margin-bottom: 0;
+  height: 15rem;
   background-image: url("../images/02-hero-bg.jpg");
   background-color: rgba(5, 72, 160, 0.5);
   background-blend-mode: darken;
@@ -110,25 +111,24 @@ p {
   position: relative;
 }
 .picture {
-  height: 90%;
+  height: 100%;
   position: absolute;
-  bottom: 5%;
-  left: 5%;
-  border-radius: 40px;
+  bottom: 0%;
+  left: 10%;
+  border-radius: 15px;
 }
 
 .subtitle-box {
   font-size: 15px;
-  background-color: var(--secondary-color);
   padding: 0 1rem;
-  margin-bottom: 1rem;
   position: absolute;
-  top: 0%;
+  bottom: 0%;
   right: 3rem;
   opacity: 85%;
   text-align: center;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background-color: var(--secondary-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* Sections */
@@ -150,7 +150,6 @@ p {
 .page-section {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
 }
 
 .page-section-box {
@@ -169,7 +168,6 @@ p {
 
 .work-section-flexbox {
   width: 80%;
-  padding-left: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -179,13 +177,12 @@ p {
 /* <!-- project 1 - largebox --> */
 .project1 {
   width: 100%;
-  aspect-ratio: 16/9;
   position: relative;
-  border: 0.3rem solid var(--secondary-color);
+  border: 0.2rem solid var(--secondary-color);
   margin: 0.5rem;
 }
 
-.project1 img {
+.work-section-flexbox img {
   width: 100%;
   height: 100%;
   opacity: 0.6;
@@ -200,22 +197,20 @@ p {
   position: absolute;
   bottom: 10%;
   left: 0rem;
+  padding-right: 3rem;
+  padding-left: 0.5rem;
   color: var(--text-color);
+  background-color: var(--secondary-color);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* <!-- projects - smallbox --> */
 .project-smallbox {
   width: 48%;
-  aspect-ratio: 16/9;
-  border: 0.3rem solid var(--secondary-color);
+  border: 0.1rem solid var(--secondary-color);
   margin: 0.5rem;
   position: relative;
-}
-.project-smallbox img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-  transition: 0.1s;
 }
 
 .project-smallbox img:hover {
@@ -223,40 +218,42 @@ p {
 }
 
 .project-smallbox div {
+  height: auto;
   position: absolute;
   bottom: 5%;
   left: 0rem;
-}
-
-.project-smallbox h4,
-h5 {
+  padding-right: 1.5rem;
+  padding-left: 0.3rem;
   color: var(--text-color);
+  background-color: var(--secondary-color);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* <!-- contact --> */
 .page-section-contact {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
 
-.page-section-contact ul {
+.page-section ul {
   width: 80%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  margin-left: 1%;
   border-left: 4px solid var(--text-color);
 }
 
-.page-section-contact li {
-  display: inline-block;
-}
-
-.page-section-contact a {
+.page-section a {
   color: var(--text-color);
   border-bottom: 2px solid var(--text-color);
+}
+
+footer {
+  background-color: var(--header-color);
+  color: white;
+  text-align: center;
 }
 
 @media screen and (max-width: 760px) {
@@ -265,12 +262,6 @@ h5 {
   }
   .page-wrapper h3 {
     font-size: 20px;
-  }
-  .page-section p {
-    font-size: 15px;
-  }
-  .page-section-contact a {
-    font-size: 13px;
   }
   .header nav {
     font-size: 10px;
@@ -297,10 +288,29 @@ h5 {
     padding-top: 0rem;
     padding-bottom: 0rem;
   }
-
   .subtitle-box {
     font-size: 10px;
     position: absolute;
     right: 1rem;
+  }
+  .page-section p {
+    font-size: 15px;
+  }
+  .project-smallbox {
+    width: 100%;
+  }
+  .project-smallbox div {
+    bottom: 5%;
+    padding-right: 1.5rem;
+    padding-left: 0.3rem;
+  }
+  .page-section ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+  .page-section a {
+    font-size: 15px;
   }
 }
