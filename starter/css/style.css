@@ -35,7 +35,7 @@ body ul {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 45px;
 }
 
 h4 {
@@ -54,6 +54,7 @@ p {
 }
 
 .header {
+  height: 4rem;
   background-color: var(--header-color);
   display: flex;
   align-items: center;
@@ -68,32 +69,30 @@ p {
   justify-content: flex-end;
   align-items: center;
   background-color: var(--secondary-color);
-  margin: 1rem 0rem;
   padding-right: 1rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .header nav {
-  width: 60%;
-  font-size: 20px;
+  width: 70%;
+  font-size: 18px;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 
 .header ul {
   padding-right: 3rem;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 1.5rem;
 }
-.header li {
-  display: inline-block;
-  justify-content: flex-end;
-}
+
 .header a {
   color: var(--secondary-color);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem 0rem 0.8rem;
   border-bottom: 2px solid var(--secondary-color);
 }
 
@@ -257,7 +256,7 @@ h5 {
 
 @media screen and (max-width: 760px) {
   h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .page-wrapper h3 {
     font-size: 20px;
@@ -267,5 +266,32 @@ h5 {
   }
   .page-section-contact a {
     font-size: 13px;
+  }
+  .header nav {
+    font-size: 10px;
+  }
+  .header ul {
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+  .header li {
+    margin-right: 0rem;
+  }
+  .header a {
+    padding-right: 0.2rem;
+    padding-left: 0.5rem;
+  }
+  .header {
+    height: 6rem;
+  }
+  .pagename {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 }
