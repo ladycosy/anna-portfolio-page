@@ -110,13 +110,13 @@ p {
   background-position: center;
   position: relative;
 }
-.picture {
+/* .picture {
   height: 100%;
   position: absolute;
   bottom: 0%;
   left: 10%;
   border-radius: 15px;
-}
+} */
 
 .subtitle-box {
   font-size: 15px;
